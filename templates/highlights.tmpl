@@ -1,0 +1,26 @@
+<div class="section light-bg" id="features">
+    <div class="container">
+        <div class="section-title">
+            <small>HIGHLIGHTS</small>
+            <h3>Features you love</h3>
+        </div>
+
+        <div class="row">
+          {{#each features}}
+            <div class="col-12 col-lg-4">
+                <div class="card features">
+                    <div class="card-body">
+                        <div class="media">
+                            <span class="ti-face-smile gradient-fill ti-3x mr-3"></span>
+                            <div class="media-body">
+                                <h4 class="card-title">{{this.title}}</h4>
+                                <p class="card-text">{{this.description}}</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+          {{/each}}
+        </div>
+    </div>
+</div>

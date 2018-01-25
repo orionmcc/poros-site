@@ -1,0 +1,118 @@
+{
+  "paths": {
+    "scripts": "js",
+    "styles": "css",
+    "images": "img"
+  },
+
+  "site": {
+    "_TITLE": {
+      "type": "Poros Test",
+      "default": "Poros Test"
+    },
+    "_LOGO": {
+      "type": "img",
+      "default": "/img/logo.png"
+    },
+    "Author": {
+      "type": "text",
+      "default": "Orion McClelland"
+    },
+    "Year": {
+      "type": "number",
+      "default": 2018
+    }
+  },
+
+  "libs": {
+    "core": [
+      "js/bootstrap.bundle.min.js",
+      "js/jquery-3.2.1.min.js",
+      "js/owl.carousel.min.js"
+    ]
+  },
+
+  "templates": {
+    "home": {
+
+      "libs": [
+      ],
+
+      "scripts": [
+
+      ],
+
+      "collections": [
+        "features"
+      ],
+
+      "styles": [
+        "bootstrap.min.css",
+        "owl.carousel.min.css",
+        "style.css",
+        "themify-icons.css"
+      ],
+
+      "vars": {
+        "foo": {
+          "type": "text",
+          "default": "bar"
+        },
+        "description": {
+          "type": "text"
+        }
+      },
+
+      "sections": {
+        "meta": ["meta"],
+        "body": ["nav_menu", "home", "highlights", "footer"]
+      }
+    }
+  },
+
+  "collections": {
+    "features": {
+      "edit": {
+        "all": "editFeatures",
+        "one": "editFeature"
+      },
+      "fields": {
+        "title": {
+          "type": "text"
+        },
+        "description": {
+          "type": "text"
+        }
+      },
+      "view": {
+        "type": "list"
+      },
+      "index": ["title"]
+    },
+    "gallery": {
+      "fields": {
+        "image": {
+          "type": "img"
+        },
+        "thumb": {
+          "type": "thumb"
+        },
+        "description": {
+          "type": "text"
+        }
+      },
+      "view": {
+        "type": "thumb",
+        "thumbnail": "thumb"
+      },
+      "index": ["title"]
+    }
+  },
+
+  "apis": {
+    "feedback": {
+      "method": "post",
+      "function": "postFeedback"
+    }
+  }
+}
